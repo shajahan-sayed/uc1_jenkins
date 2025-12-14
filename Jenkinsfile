@@ -26,6 +26,7 @@ pipeline {
             echo 'Build or tests failed.'
         }
     }
+ }
 }
 
     
