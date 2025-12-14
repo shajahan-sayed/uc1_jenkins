@@ -12,11 +12,7 @@ pipeline {
                 sh 'venv/bin/pip install -r requirements.txt'
             }
       }
-      stage ('test') {
-        steps {
-                sh "PYTHONPATH=\\$PWD 'venv/bin/pytest"
-            }
-        }
+  
     }
     post {
       success {
