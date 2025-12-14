@@ -14,7 +14,7 @@ pipeline {
       }
       stage ('test') {
         steps {
-                sh ''' PYTHONPATH=$PWD 'venv/bin/pytest '''
+                sh "PYTHONPATH=\\$PWD 'venv/bin/pytest"
             }
         }
     }
